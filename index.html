@@ -1,0 +1,318 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head> <link rel="stylesheet" href="./style.css">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#1B4332">
+  <title>A Little Confession for You 💚</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="ambient-glow"></div>
+  <div id="garden" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <div class="brand">🌿 A Little Confession</div>
+    <button id="musicButton" class="music-button" type="button">♫ Play Music</button>
+  </header>
+
+  <main>
+    <!-- WELCOME PAGE -->
+    <section id="welcomePage" class="page active">
+      <div class="glass-card welcome-card">
+        <div class="eyebrow">A little message, just for you</div>
+        <h1>Hey, I have something<br>to tell you...</h1>
+        <p class="subtext">I hope you have a little time to read something from my heart. 💚</p>
+
+        <div class="envelope-wrap">
+          <div class="envelope" id="envelope">
+            <div class="envelope-back"></div>
+            <div class="envelope-letter">💌</div>
+            <div class="envelope-front"></div>
+            <div class="envelope-flap"></div>
+            <div class="envelope-heart">💚</div>
+          </div>
+        </div>
+
+        <button id="openButton" class="primary-button" type="button">Open My Message 💚</button>
+        <p class="tiny-note">A little courage, a sincere heart, and this message.</p>
+      </div>
+    </section>
+
+    <!-- CONFESSION PAGE -->
+    <section id="confessionPage" class="page">
+      <div class="glass-card confession-card">
+        <div class="eyebrow">A message from my heart</div>
+        <h2>A Little Something<br>From My Heart 💚</h2>
+
+        <div class="photo-frame">
+          <img src="./images/crush-photos.jpg" alt="my photo"
+            onerror="this.hidden=true; document.getElementById('photoFallback').hidden=false;">
+          <div id="photoFallback" class="photo-placeholder" hidden>
+            🌷<span>Add your photo in the images folder</span>
+          </div>
+        </div>
+
+        <div class="letter-paper">
+          <div class="letter-decoration">🌿 ✿ 💚 ✿ 🌿</div>
+          <div id="confessionText" class="typed-text" aria-live="polite"></div>
+          <div class="letter-decoration">🌷 💚 🌷</div>
+        </div>
+
+        <button id="continueButton" class="primary-button" type="button">Continue Reading 💌</button>
+        <p class="tiny-note">Take your time. There's no pressure. 💚</p>
+      </div>
+    </section>
+
+    <!-- QUESTION PAGE -->
+    <section id="questionPage" class="page">
+      <div class="glass-card question-card">
+        <div class="eyebrow">One little question...</div>
+        <div class="big-heart" aria-hidden="true">💚</div>
+        <h2>Would you give me a chance to get to know you better? 🥺</h2>
+        <p class="subtext">Whatever your answer is, I'll respect it.</p>
+        <div class="answer-buttons">
+          <button id="yesButton" class="primary-button yes-button" type="button">YES 💚</button>
+          <button id="noButton" class="secondary-button" type="button">NO 🙈</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- YES PAGE -->
+    <section id="yesPage" class="page">
+      <div class="glass-card response-card">
+        <div class="celebration-heart">💚</div>
+        <div class="eyebrow">A moment I'll remember</div>
+        <h2>WAIT, REALLY?!<br>YOU JUST MADE MY DAY! 💚🥹</h2>
+        <p class="response-message">
+          Thank you for giving me a chance. I honestly don't know how to explain
+          how happy I am right now. I hope we can take things slowly, understand
+          each other, and create beautiful memories together. 🫶
+        </p>
+        <button id="revealLetterButton" class="primary-button" type="button">
+          There's Something More I Want to Tell You 💌
+        </button>
+      </div>
+    </section>
+
+    <!-- COMPLETE LETTER -->
+    <section id="letterPage" class="page">
+      <article class="special-letter">
+        <div class="letter-decoration">🌿 ✿ 💚 ✿ 🌿</div>
+        <div class="eyebrow">A letter I wanted you to read</div>
+        <h2>Everything I Wanted to Tell You 💚</h2>
+
+        <div class="full-letter">
+          <p>Hi, Good day to you. I just want to tell you that I've had a crush on you since grade 11, but now I feel differently about you. Today, I'm going to tell you the truth. I really like you I mean, I'm with you, but it's hard to say because it's just awkward, because we're friends, then we can play CODM, but I can't hide my feelings for you, it's really hard because my chest is tight and I feel so heavy, I just want to admit it, not to get rid of my feelings, but I just want to be honest with you And when I admit that this is difficult, I hope no one will know, so I hope no one changes us when we come together as friends, then I know that I have no chance on you, so I want to Just say this when it's gone and I can tell you what I'm hiding Not joking but my feelings for you are true I hope no one knows this I hope we can still be friends as if nothing has changed thank you for everything If I ever avoid you, I'm sorry because it really hurts.</p>
+
+          <p>Pasensya na talaga d ko naman kasi talaga alam na mag kaka gusto ako sayo, pasensya napo talaga if ever na iiwas ka sakin no problem sakin kasalanan ko din naman to lahat gusto ko lang naman na talagang umamin sayo matagal na natatakot lang ako pinapangunahan ako ng pag ka torpe at pag ka takot sa sarili then alam ko naman na d ako yong mga tipong lalaki na gusto nyo, gusto ko lang naman na mag peace of mind kaya ako nag confess sayo, the peace of i want is to tell everything in my heart and in my mind walang halong biro to haha, pasensya na talaga 🥹. Kung sobrang awkward sabihin mo lang sakin if needed mo ng peace sabihin mo lang sakin kaya kong mag paubaya madaming school na pwedeng malipatan then nag seselos nako ng walang karapatan sayo eh haha, iwan ko sa sarili ko masyadong nag paka tanga sa pag ibig na to eh, nag ka gusto sa babaeng possibleng walang pag asa, i dont know kung saan ko uumpisahan ang lahat pero ang masasabi ko lang is mag ingat ka lagi and be kind of others, at kung may kailangan ka mag sabi kalang i am here to support want u want to do anything else for you. Sorry nga pala ulit 🥹🥹🫶</p>
+
+          <p>If ever ma bigyan ng chance why not just kidding haha, sorry ulit sana lagi kang masaya sa tatahakin mong buhay laging mag pray at laging mag paka tatag ng buhay dahil kasama mo si Cristo sa bawat oras at bawat minuto. Mahal na mahal kita kahit nag coconfess palang ako lagi mong iingatan ang sarili mo ha, wag papalipas ng gutom if ever want mo ng matcha wag ka mahihiyang mag sabi sakin kasi if i have a money lilibre kita kahit saan basta maging masaya kalang, again sorry for this confession thank you for everything 🫶</p>
+        </div>
+
+        <div class="letter-ending">
+          Whatever happens, thank you for giving me the chance to express what's in my heart.
+          I hope you always stay happy. Take care always. 💚🌷
+        </div>
+        <button id="restartLetterButton" class="primary-button" type="button">Back to the Beginning 🌿</button>
+      </article>
+    </section>
+
+    <!-- NO PAGE -->
+    <section id="noPage" class="page">
+      <div class="glass-card response-card">
+        <div class="soft-flower">🌷</div>
+        <div class="eyebrow">Thank you for reading</div>
+        <h2>It's okay. 💚</h2>
+        <p class="response-message">
+          It's okay! Thank you for reading my little confession. No pressure.
+          I'll respect your answer. 💚
+        </p>
+        <button id="restartNoButton" class="primary-button" type="button">Back to the Beginning 🌿</button>
+      </div>
+    </section>
+  </main>
+
+  <audio id="backgroundMusic" src="./music/background-music.mp3" loop preload="none"></audio>
+
+  <footer>Made with sincerity and a little courage. 💚</footer>
+
+  <!-- JavaScript is embedded here so the inline preview does not need /script.js -->
+  <script>
+    (() => {
+      "use strict";
+
+      const pages = document.querySelectorAll(".page");
+      const garden = document.getElementById("garden");
+      const music = document.getElementById("backgroundMusic");
+      const musicButton = document.getElementById("musicButton");
+      const envelope = document.getElementById("envelope");
+      const openButton = document.getElementById("openButton");
+      const continueButton = document.getElementById("continueButton");
+      const confessionText = document.getElementById("confessionText");
+
+      function showPage(pageId) {
+        pages.forEach(page => page.classList.remove("active"));
+        const page = document.getElementById(pageId);
+        if (page) page.classList.add("active");
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }
+
+      const confessionParts = [
+        "Hi, Good day to you. I just want to tell you that I've had a crush on you since grade 11, but now I feel differently about you. Today, I'm going to tell you the truth. I really like you I mean, I'm with you, but it's hard to say because it's just awkward, because we're friends, then we can play CODM, but I can't hide my feelings for you, it's really hard because my chest is tight and I feel so heavy, I just want to admit it, not to get rid of my feelings, but I just want to be honest with you And when I admit that this is difficult, I hope no one will know, so I hope no one changes us when we come together as friends, then I know that I have no chance on you, so I want to Just say this when it's gone and I can tell you what I'm hiding Not joking but my feelings for you are true I hope no one knows this I hope we can still be friends as if nothing has changed thank you for everything If I ever avoid you, I'm sorry because it really hurts.",
+        "Pasensya na talaga d ko naman kasi talaga alam na mag kaka gusto ako sayo, pasensya napo talaga if ever na iiwas ka sakin no problem sakin kasalanan ko din naman to lahat gusto ko lang naman na talagang umamin sayo matagal na natatakot lang ako pinapangunahan ako ng pag ka torpe at pag ka takot sa sarili then alam ko naman na d ako yong mga tipong lalaki na gusto nyo, gusto ko lang naman na mag peace of mind kaya ako nag confess sayo, the peace of i want is to tell everything in my heart and in my mind walang halong biro to haha, pasensya na talaga 🥹. Kung sobrang awkward sabihin mo lang sakin if needed mo ng peace sabihin mo lang sakin kaya kong mag paubaya madaming school na pwedeng malipatan then nag seselos nako ng walang karapatan sayo eh haha, iwan ko sa sarili ko masyadong nag paka tanga sa pag ibig na to eh, nag ka gusto sa babaeng possibleng walang pag asa, i dont know kung saan ko uumpisahan ang lahat pero ang masasabi ko lang is mag ingat ka lagi and be kind of others, at kung may kailangan ka mag sabi kalang i am here to support want u want to do anything else for you. Sorry nga pala ulit 🥹🥹🫶",
+        "If ever ma bigyan ng chance why not just kidding haha, sorry ulit sana lagi kang masaya sa tatahakin mong buhay laging mag pray at laging mag paka tatag ng buhay dahil kasama mo si Cristo sa bawat oras at bawat minuto. Mahal na mahal kita kahit nag coconfess palang ako lagi mong iingatan ang sarili mo ha, wag papalipas ng gutom if ever want mo ng matcha wag ka mahihiyang mag sabi sakin kasi if i have a money lilibre kita kahit saan basta maging masaya kalang, again sorry for this confession thank you for everything 🫶"
+      ];
+
+      let currentPart = 0;
+      let typingTimer = null;
+      let isTyping = false;
+
+      function typePart(text) {
+        clearInterval(typingTimer);
+        isTyping = true;
+        continueButton.disabled = true;
+        continueButton.textContent = "Writing your message...";
+
+        const paragraph = document.createElement("p");
+        confessionText.appendChild(paragraph);
+        let index = 0;
+
+        typingTimer = setInterval(() => {
+          paragraph.textContent += text.charAt(index);
+          index++;
+
+          if (index >= text.length) {
+            clearInterval(typingTimer);
+            isTyping = false;
+            continueButton.disabled = false;
+            continueButton.textContent =
+              currentPart === confessionParts.length - 1
+                ? "Continue to My Question 💚"
+                : "Continue Reading 💌";
+          }
+        }, 12);
+      }
+
+      function startConfession() {
+        currentPart = 0;
+        confessionText.innerHTML = "";
+        typePart(confessionParts[currentPart]);
+      }
+
+      openButton.addEventListener("click", () => {
+        envelope.classList.add("open");
+        openButton.disabled = true;
+        openButton.textContent = "Opening your message...";
+
+        setTimeout(() => {
+          showPage("confessionPage");
+          startConfession();
+          openButton.disabled = false;
+          openButton.textContent = "Open My Message 💚";
+        }, 800);
+      });
+
+      continueButton.addEventListener("click", () => {
+        if (isTyping) return;
+        currentPart++;
+
+        if (currentPart < confessionParts.length) {
+          typePart(confessionParts[currentPart]);
+        } else {
+          showPage("questionPage");
+        }
+      });
+
+      function createFireworks() {
+        const symbols = ["💚", "✨", "🌸", "🍃", "🌷", "💫"];
+
+        for (let burst = 0; burst < 7; burst++) {
+          setTimeout(() => {
+            const centerX = 10 + Math.random() * 80;
+            const centerY = 15 + Math.random() * 65;
+
+            for (let i = 0; i < 14; i++) {
+              const spark = document.createElement("span");
+              spark.className = "spark";
+              spark.textContent = symbols[Math.floor(Math.random() * symbols.length)];
+              spark.style.left = centerX + "vw";
+              spark.style.top = centerY + "vh";
+
+              const angle = (Math.PI * 2 * i) / 14;
+              const distance = 60 + Math.random() * 110;
+              spark.style.setProperty("--dx", Math.cos(angle) * distance + "px");
+              spark.style.setProperty("--dy", Math.sin(angle) * distance + "px");
+
+              document.body.appendChild(spark);
+              setTimeout(() => spark.remove(), 1700);
+            }
+          }, burst * 300);
+        }
+      }
+
+      document.getElementById("yesButton").addEventListener("click", () => {
+        showPage("yesPage");
+        createFireworks();
+      });
+
+      document.getElementById("noButton").addEventListener("click", () => {
+        showPage("noPage");
+      });
+
+      document.getElementById("revealLetterButton").addEventListener("click", () => {
+        showPage("letterPage");
+      });
+
+      function restartWebsite() {
+        clearInterval(typingTimer);
+        currentPart = 0;
+        isTyping = false;
+        confessionText.innerHTML = "";
+        envelope.classList.remove("open");
+        continueButton.disabled = false;
+        continueButton.textContent = "Continue Reading 💌";
+        showPage("welcomePage");
+      }
+
+      document.getElementById("restartLetterButton").addEventListener("click", restartWebsite);
+      document.getElementById("restartNoButton").addEventListener("click", restartWebsite);
+
+      musicButton.addEventListener("click", async () => {
+        if (music.paused) {
+          try {
+            await music.play();
+            musicButton.textContent = "♫ Pause Music";
+          } catch (error) {
+            musicButton.textContent = "Music file not found";
+            console.warn("Add music/background-music.mp3 to enable music.", error);
+          }
+        } else {
+          music.pause();
+          musicButton.textContent = "♫ Play Music";
+        }
+      });
+
+      const gardenItems = ["🍃", "🌿", "🌸", "💚", "🌷", "🦋", "✿"];
+
+      function createFloatingDecoration() {
+        const item = document.createElement("span");
+        item.className = "floaty";
+        item.textContent = gardenItems[Math.floor(Math.random() * gardenItems.length)];
+        item.style.left = Math.random() * 100 + "vw";
+        item.style.fontSize = (14 + Math.random() * 17) + "px";
+        item.style.animationDuration = (9 + Math.random() * 10) + "s";
+        garden.appendChild(item);
+        setTimeout(() => item.remove(), 20000);
+      }
+
+      setInterval(createFloatingDecoration, 700);
+    })();
+  </script>
+</body>
+</html>
